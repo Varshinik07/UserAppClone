@@ -6,19 +6,24 @@ import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
 import{RouterModule,Routes} from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 const appRoutes:Routes=[
   {
     path:"",component:SigninComponent
   },
   {
     path:"signup",component:SignupComponent
+  },
+  {
+    path:"dashboard",component:DashboardComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
